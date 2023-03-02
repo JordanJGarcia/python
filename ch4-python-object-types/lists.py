@@ -81,17 +81,18 @@ print([[x ** 2, x ** 3] for x in range(4)])
 print("\n# [[x, x / 2, x * 2] for x in range(-6, 7, 2) if x > 0]")
 print([[x, int(x / 2), x * 2] for x in range(-6, 7, 2) if x > 0])
 
-print("\nYou'll find that in recent Pythons, comprehension syntax has been generalized for other roles:")
-print("its not just form making lists today")
+print("\nYou'll find that in recent Pythons, comprehension syntax has been generalized for other roles besides lists:")
 print("For example, enclosing a comprehension in parentheses can also be used to create generators that")
 print("produce results on demand:")
 
 print("\nM:", M)
 print("\n# G = (sum(row) for row in M)")
 G = (sum(row) for row in M)
-print("\n# next(G) (3 times)")
+print("\n# next(G)")
 print(next(G))
+print("\n# next(G)")
 print(next(G))
+print("\n# next(G)")
 print(next(G))
 
 
